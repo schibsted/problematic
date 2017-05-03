@@ -16,5 +16,7 @@ One consequence of this is that it's hard to have an even-keeled discussion and
 really work the problem together, and another is that it can feel like the goal
 of the interview is just to solve the problem.
 
-_Problematic_ is an attempt to manage this by dispensing greenfield problems that
-neither the interviewer nor the candidate has solved before.
+_Problematic_ is an attempt to manage this and level the playing field by
+dispensing greenfield problems that neither the interviewer nor the candidate
+has solved before so they can really get an idea of what it's like to work
+together.
