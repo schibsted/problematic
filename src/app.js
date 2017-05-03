@@ -1,4 +1,5 @@
 import problems from './problems.json';
+import jQuery from 'jquery';
 
 // Dispenses a random problem from a given set of problems.
 //
@@ -11,15 +12,21 @@ const dispense = (problems) => {
   ];
 }
 
-// Render the given problem in the given element.
-//
-// problem - A String describing a problem.
-// element - An HTML element to render it in.
-const render = (problem, element) => {
-  element.innerHTML = problem;
+const problem = dispense(problems);
+
+const problemElement = jQuery('#problem');
+const hintElement = jQuery('#hint');
+
+problemElement.html(problem.shift());
+
+if (problem.length >= 1) {
+  hintElement.css('visibility', 'visible');
 }
 
-const problem = dispense(problems);
-const element = document.getElementById('problem');
+hintElement.on('click', () => {
+  problemElement.html(problem.shift());
 
-render(problem, element);
+  if (problem.length <= 1) {
+    hintElement.css('visibility', 'hidden');
+  }
+});

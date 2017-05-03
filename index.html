@@ -3,17 +3,25 @@
     <title>Problematic</title>
 
     <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" type="text/css" href="src/animate.css">
   </head>
 
   <body>
     <div class="container">
-      <div class="loading">
-        🤔
-      </div>
+      <div class="animated">
+        <div class="thinking">
+          🤔
+        </div>
 
-      <h1 id="problem" class="problem">
-        The quick brown fox jumps over the lazy dog. But who was dog?
-      </h1>
+        <div id="problem" class="problem">
+          The quick brown fox jumps over the lazy dog. But who was dog?
+        </h1>
+
+        <div id="hint" class="hint">
+          <span class="icon">🤐</span>
+          <span class="label">Help us out!</span>
+        </div>
+      </div>
     </div>
 
     <script src="dist/bundle.js"></script>

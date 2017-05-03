@@ -1,4 +1,8 @@
 [
-  "The quick brown fox jumps over the lazy dog. But who was dog?",
-  "The quick brown fox jumps over the lazy dog. But who was fox?"
+  [
+    "You have an infinite supply of eggs, and access to a 100-story building. All eggs are identical. You want to find the highest floor from which an egg will not break. What strategy would you choose to minimise the number of drops it would take to find that floor?"
+  ],
+  [
+    "You have 25 horses, and you can race 5 of them at a time. What strategy would you choose to minimise the number of races it would take to find the fastest 3 horses?"
+  ]
 ]

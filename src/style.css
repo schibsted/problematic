@@ -1,7 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic,700,400italic);
 
+@keyframes loading {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: translate3d(0, 20%, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1.0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 body {
-  background-color: hsl(205, 50%, 55%);
+  background-color: hsl(187, 50%, 55%);
   color: #fff;
   font-family: Merriweather, Georgia;
   position: relative;
@@ -23,14 +45,44 @@ h2, h3 {
   font-style: italic;
 }
 
-h2 {
-  font-size: 1.2rem;
+.problem {
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
-
-.loading {
+.thinking {
   font-size: 4rem;
+  animation: loading 5s infinite;
+  animation-timing-function: step-end;
+  margin-bottom: 30px;
+}
+
+.animated {
+  animation: appear 0.1s;
+}
+
+.hint {
+  background: rgba(255, 255, 255, 0.2);
+  visibility: hidden;
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.0rem;
+}
+
+.hint:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hint .icon {
+  font-size: 2.0rem;
+  margin-right: 8px;
+}
+
+.hint .label {
+  font-style: italic;
+  position: relative;
+  top: -6px;
 }
