@@ -68,9 +68,48 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__problems_json__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__problems_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__problems_json__);
+
+
+// Dispenses a random problem from a given set of problems.
+//
+// problems - Just an Array of Strings, yo.
+//
+// Returns a String describing a problem.
+const dispense = (problems) => {
+  return problems[
+    Math.floor(Math.random() * (problems.length))
+  ];
+}
+
+// Render the given problem in the given element.
+//
+// problem - A String describing a problem.
+// element - An HTML element to render it in.
+const render = (problem, element) => {
+  element.innerHTML = problem;
+}
+
+const problem = dispense(__WEBPACK_IMPORTED_MODULE_0__problems_json___default.a);
+const element = document.getElementById('problem');
+
+render(problem, element);
+
+
+/***/ }),
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports) {
 
-
+module.exports = [
+	"The quick brown fox jumps over the lazy dog. But who was dog?",
+	"The quick brown fox jumps over the lazy dog. But who was fox?"
+];
 
 /***/ })
 /******/ ]);
