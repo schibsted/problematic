@@ -1,0 +1,25 @@
+{
+  "name": "problematic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgorset/problematic.git"
+  },
+  "author": "Johannes Gorset",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgorset/problematic/issues"
+  },
+  "homepage": "https://github.com/jgorset/problematic#readme"
+}
