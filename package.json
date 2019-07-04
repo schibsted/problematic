@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "snyk": "^1.190.0"
   },
   "devDependencies": {
     "jquery": "^3.2.1",
@@ -14,7 +15,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --progress --colors --watch",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/jgorset/problematic/issues"
   },
-  "homepage": "https://github.com/jgorset/problematic#readme"
+  "homepage": "https://github.com/jgorset/problematic#readme",
+  "snyk": true
 }
